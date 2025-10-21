@@ -79,6 +79,7 @@ h2{
   border-color:rgb(0, 0, 0);
 }
 
+
 .recipe-layout{
   display: flex;
   justify-content: center;
@@ -192,7 +193,7 @@ footer {
   .Banana img {
    height: 250px;
   }
-  
+
   }
   .recipe-card {
     margin: 1rem;
