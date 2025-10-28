@@ -1,0 +1,93 @@
+html {
+    color: rgb(0, 0, 0);
+ font-family:"Crimson Text", serif ;
+ font-size: 24px
+
+}
+
+
+body{
+    margin:10%
+}
+
+
+
+h1 { 
+    color: black; 
+    letter-spacing: -0.023m;
+    letter-spacing: -0.02em; 
+    text-transform: capitalize;
+    text-indent: -1rem;
+    font-family:"Crimson Text", serif;
+}
+
+h2 { 
+    color: rgb(99, 96, 96); 
+    letter-spacing: -0.023m;
+    letter-spacing: -0.02em; 
+    text-transform: capitalize;
+    text-indent: -1rem;
+    font-family: "Crimson Text", serif;
+    font-size: 20px;
+}
+
+h3 { 
+    color: rgb(159, 156, 156); 
+    letter-spacing: -0.023m;
+    letter-spacing: -0.02em; 
+    text-transform: capitalize;
+    text-indent: -1rem;
+    font-family: "Crimson Text", serif;
+    font-size: 15px;
+}
+
+p{ 
+    color: black;
+    font-size:24px; 
+    line-height: 1.4;
+    font-family: "Crimson Text", serif;
+}
+
+.SemiBold{    
+    font-weight: 600;
+} 
+
+.Bold{
+    font-weight:700;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.less{ 
+    letter-spacing: 0.3em;
+}
+
+.more{
+    letter-spacing: -0.06em;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+.linethrough{ 
+    text-decoration: line-through;
+}
+
+.overline{
+    text-decoration: overline;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.lowercase{
+    text-transform: lowercase;
+}
+
+.capitalize{
+    text-transform: capitalize;
+}
