@@ -1,0 +1,246 @@
+:root {
+  --background: #fff9f3;
+  --primary-color: #928f7a;
+  --accent-color: #c0bb9a;
+  --text-color: #000;
+  --card-shadow: rgba(0, 0, 0, 0.1);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text-color);
+  margin: 0;
+  line-height: 1.6;
+  font-family: 'EB Garamond', serif;
+}
+
+/* ===== HEADER ===== */
+header {
+  text-align: center;
+  background-color: #f0f0f0;
+  color: black;
+  padding: 2rem 1rem;
+}
+
+header h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 100;
+  font-size: 5rem;
+  margin-bottom: 0.3rem;
+}
+
+.creator {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* ===== HERO SECTION (image + description + time) ===== */
+.top {
+  display: flex;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  align-items: flex-start;
+  flex-wrap: wrap; /* allows stacking on smaller screens */
+}
+
+.Banana img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.Banana {
+  flex: 1 1 60%;
+  max-height: 400px;
+  overflow: hidden;
+}
+
+.info-boxes {
+  flex: 1 1 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.description {
+  background-color: #fff;
+  padding: 20px;
+  border: none;
+  font-size: 1rem;
+}
+
+.time {
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid black;
+  background-color: #fff;
+}
+
+/* ===== RECIPE LAYOUT ===== */
+.recipe-layout {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.left-column {
+  flex: 1;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: sticky;
+  top: 1rem;
+  height: fit-content;
+}
+
+.ingredients {
+  border: 1px solid #333;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.equipment {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.right-column {
+  flex: 2;
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding-right: 1rem;
+}
+
+/* ===== DIRECTIONS ===== */
+.directions {
+  width: 100%;
+  max-width: 850px;
+  background: white;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px var(--card-shadow);
+}
+
+.directions .step {
+  margin: 1.5rem 0;
+}
+
+.directions .step p {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.directions .step img {
+  width: 100%;
+  max-height: 600px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px var(--card-shadow);
+  margin-top: 0.5rem;
+}
+
+/* ===== FINAL IMAGE ===== */
+.final-image {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.final-image img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px var(--card-shadow);
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #f0f0f0;
+  color: #000000d7;
+  font-size: 0.9rem;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 1024px) {
+  header h1 {
+    font-size: 3.5rem;
+  }
+
+  .top {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .Banana {
+    max-height: 350px;
+  }
+
+  .info-boxes {
+    width: 100%;
+    align-items: center;
+  }
+
+  .description, .time {
+    width: 90%;
+  }
+
+  .recipe-layout {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-column,
+  .right-column {
+    max-width: 100%;
+    position: static;
+  }
+
+  .ingredients, .equipment {
+    width: 90%;
+    margin: auto;
+  }
+
+  .directions {
+    width: 90%;
+    margin: 1rem auto;
+    padding: 1.5rem;
+  }
+
+  .directions .step img {
+    max-height: 350px;
+  }
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  .Banana {
+    height: 250px;
+  }
+
+  .description, .time, .ingredients, .equipment {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .directions {
+    padding: 1rem;
+  }
+}
