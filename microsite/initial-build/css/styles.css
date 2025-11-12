@@ -1,0 +1,110 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Georgia", serif;
+  background-color: #faf7f1;
+  color: #1a1a1a;
+  line-height: 1.7;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+  font-size: 0.85rem;
+  border-bottom: 1px solid #e5e0d8;
+  padding-bottom: 0.75rem;
+  margin-bottom: 3rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #222;
+  letter-spacing: 0.5px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.active {
+  font-weight: bold;
+}
+
+.intro-header {
+  margin-bottom: 2rem;
+  text-align: left; /* ✅ Ensures left alignment */
+}
+
+.intro-header h1 {
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  line-height: 1.3;
+}
+
+.main-image {
+  width: 100%;
+  height: auto;
+  margin: 1.5rem 0;
+  border-radius: 2px;
+}
+
+.intro-text {
+  font-size: 1rem;
+  font-style: italic;
+  max-width: 650px;
+  margin-bottom: 2rem;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #e5e0d8;
+  margin: 2rem 0;
+}
+
+.travel-section {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.travel-section h3 {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.travel-section p {
+  font-size: 0.95rem;
+  font-style: italic;
+}
+
+@media (max-width: 700px) {
+  nav {
+    gap: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .travel-section {
+    grid-template-columns: 1fr;
+  }
+
+  .intro-header h1 {
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
+
+  .intro-text {
+    font-size: 0.95rem;
+  }
+}
