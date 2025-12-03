@@ -1,0 +1,418 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1{
+    font-family: 'Aboreto', cursive;
+    font-size: 4rem;
+    font-weight: 50;
+    padding-left: 2rem;
+}
+
+.subtitle{
+    padding-left: 2rem;
+}
+
+h3{
+    font-family: 'Aboreto', cursive;
+}
+
+body {
+  font-family: "Georgia", serif;
+  background-color: #faf7f1;
+  color: #1a1a1a;
+  line-height: 1.7;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.standard-page {
+  max-width: 100%;   
+  padding: 2rem;  
+  margin: 0 auto;
+  padding-top: 7rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #e5e0d8;
+  letter-spacing: 0.5px;
+  font-weight: 900;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  font-weight:bolder; 
+}
+
+.active {
+  font-weight: bold;
+}
+
+.intro-header {
+  position: relative;
+  width: 100vw;          
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;    
+  margin-right: -50vw;
+  height: 100vh;        
+  background-image: url('../images/as.jpg.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 8rem;
+}
+
+nav {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  width: 100vw;      
+  transform: translateX(-50%);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  z-index: 10;
+  font-family: 'Aboreto', cursive;
+  display: flex;
+  gap: 3rem; 
+}
+
+nav a{
+color: #ffffff;
+}
+
+@media (max-width: 700px) {
+  nav {
+    gap: 1rem;          
+    font-size: 0.9rem; 
+    padding-left: 1rem; 
+    padding-right: 1rem;
+  }
+
+  nav a {
+    padding: 0.3rem 0; 
+  }
+}
+
+
+.standard-page nav a{
+    color:#000000
+}
+
+
+.intro-header h1 {
+  color: white;
+  font-size: 7rem;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.1;
+  letter-spacing: 6px;
+  font-weight: 100;
+}
+
+body {
+  max-width: 80%;
+  margin: 0 auto;
+  background-color: #faf7f1;
+  padding-top: 0;
+}
+
+body > .intro-header {
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 700px) {
+  .intro-header h1 {
+    letter-spacing: 3px;
+    font-size: 4rem;
+  }
+}
+
+.main-image {
+  width: 100%;
+  height: auto;
+  margin: 1.5rem 0;
+  border-radius: 2px;
+}
+
+.intro-text {
+  font-size: 2.5rem;
+  font-style: italic;
+  max-width: 100;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+  text-align: left;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #e5e0d8;
+  margin: 2rem 0;
+}
+
+.travel-section {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.travel-section h3 {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.travel-section p {
+  font-size: 0.95rem;
+  font-style: italic;
+}
+
+@media (max-width: 700px) {
+  nav {
+    gap: rem;
+    font-size: 0.9rem;
+  }
+
+  .travel-section {
+    grid-template-columns: 1fr;
+  }
+
+
+  .intro-text {
+    font-size: 0.95rem;
+  }
+}
+
+.standard-page nav {
+  color:#1a1a1a;
+}
+
+.standard-page h1 {
+  margin-top: 3rem;
+}
+
+.life-cycle-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+  max-width:1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.cycle-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.cycle-image {
+  width: 500px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.cycle-text {
+  width: 500px; 
+  text-align: left; 
+}
+
+.cycle-text h3 {
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 700px) {
+  .cycle-item {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .cycle-item:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+}
+
+@media (max-width: 699px) {
+  .cycle-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px; 
+  }
+   .cycle-item img {  
+    height: auto;   
+  }
+
+  .cycle-item p, 
+  .cycle-item h1, 
+  .cycle-item h2 {
+    font-size: 0.9rem; 
+    line-height: 1.3;
+  }
+.cycle-item p {
+    font-size: 0.85rem;  
+    line-height: 1.4;    
+    align-items: center; 
+    padding-left: 10px;   
+  }
+
+  .cycle-text,
+  .cycle-image {
+    width: 100% !important;
+    max-width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+  }
+}
+
+.side-by-side-images {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.image-with-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.side-by-side-images img {
+  width: 100%;
+  height: auto;
+}
+
+.image-label {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  text-align: center;
+  font-family: 'Aboreto', cursive;
+}
+
+@media (max-width: 700px) {
+  .side-by-side-images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .side-by-side-images img {
+    width: 90%;
+  }
+
+  .image-label {
+    font-size: 1rem;
+  }
+}
+
+.migration-pair {
+  display: flex;
+  align-items: center;
+  gap: 8.5rem;
+  margin: 3rem 0;
+}
+
+.migration-image {
+  width: 40%;
+  height: auto;
+  object-fit: cover;
+  margin-left: 7rem;
+}
+
+.migration-text {
+  width: 40%;
+  font-size: 1rem;
+  line-height: 1.8;
+  text-align: left;
+  margin-right: 5rem;
+}
+
+
+@media (max-width: 1024px) and (min-width: 701px) {
+  .migration-pair {
+    flex-direction: column;
+    gap: 2rem;            
+    margin: 2rem 0;
+  }
+
+  .migration-image,
+  .migration-text {
+    width: 90%;      
+    margin: 0 auto;       
+  }
+
+  .migration-text {
+    font-size: 0.95rem; 
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 700px) {
+  .migration-pair {
+    flex-direction: column;
+    text-align: left;
+    gap:1.5rem;
+    margin:1.5rem 0;
+  }
+
+  .migration-image,
+  .migration-text {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .migration-text p {
+    font-size: 0.9rem; 
+    line-height: 1.5;
+  }
+}
+ 
+
+body.standard-page .intro-text {
+    display: flex;
+    justify-content: center;
+}
+
+body.standard-page .intro-text p {
+   font-family: 'Aboreto', cursive;
+    font-size: 1.5rem;      
+    font-style: normal;
+    line-height: 1.8;
+    text-align: center;
+    max-width: 70%;
+    margin:0 auto;
+}
+
+body.standard-page img.conservation {
+    width: 100%;
+    align-items: center;
+}
+
+body.conservation-page section p {
+    max-width:80%;
+    margin: 0 auto;
+    line-height: 1.6;
+    text-align: center;
+}
+
+body.sources-page section {
+    max-width: 90%;  
+    margin: 0 auto;     
+    font-size: 1rem;   
+    line-height: 1.6;  
+    text-align: left; 
+}
+
+
